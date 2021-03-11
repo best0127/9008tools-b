@@ -26,6 +26,12 @@ void scanFile()
 		cout <<setw(4)<< i << ": " << partition[i] << endl;
 	}
 
+	//计算分区大小
+	int b = buf[34]<<16;
+	cout << b;
+	system("pause");
+
+
 }
 
 int main()
