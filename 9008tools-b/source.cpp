@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<iomanip>
 
 #define PATH "E:\\workplace\\program\\gpt.img"
 using namespace std;
@@ -22,7 +23,7 @@ void scanFile()
 			string partName(1, buf[j]);
 			partition[i] = partition[i] + partName;
 		}
-		cout << partition[i] << endl;
+		cout <<setw(4)<< i << ": " << partition[i] << endl;
 	}
 
 }
